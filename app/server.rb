@@ -1,3 +1,4 @@
+env = ENV["RACK_ENV"] || "development"
 require 'sinatra/base'
 require 'haml'
 require 'bundler/setup'
