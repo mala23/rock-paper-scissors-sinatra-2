@@ -5,6 +5,5 @@ Feature: User plays game
 
   Scenario: User chooses rock and wins
     Given i am on the "/" page
-    When i choose "Rock"
-    And the AI chooses "Scissors"
+    When i choose "Rock" and the AI chooses Scissors
     Then I should see "Congratulations, Rock beats Scissors!"

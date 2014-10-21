@@ -9,7 +9,11 @@ class RpsSinatra2 < Sinatra::Base
   set :session_secret, 's3cr3t'
   
   get '/' do
-    'Hello RpsSinatra2!'
+    haml :index
+  end
+
+  post '/result' do
+    haml :result
   end
 
   # start the server if ruby file executed directly

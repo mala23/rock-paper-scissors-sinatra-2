@@ -3,14 +3,10 @@ Given(/^i am on the "(.*?)" page$/) do |page|
     expect(current_path).to eq(page)  
 end
 
-When(/^i choose "(.*?)"$/) do |gesture|
-    pending # express the regexp above with the code you wish you had
-end
-
-When(/^the AI chooses "(.*?)"$/) do |gesture|
-    pending # express the regexp above with the code you wish you had
+When(/^i choose "(.*?)" and the AI chooses Scissors$/) do |gesture|
+    click_button(gesture)
 end
 
 Then(/^I should see "(.*?)"$/) do |text|
-    pending # express the regexp above with the code you wish you had
+    expect(page).to have_content text
 end
