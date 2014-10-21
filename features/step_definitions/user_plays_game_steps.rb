@@ -1,6 +1,7 @@
 Given(/^i am on the "(.*?)" page$/) do |page|
-    pending # express the regexp above with the code you wish you had
-  end
+    visit(page)
+    expect(current_path).to eq(page)  
+end
 
 When(/^i choose "(.*?)"$/) do |gesture|
     pending # express the regexp above with the code you wish you had
