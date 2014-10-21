@@ -1,0 +1,4 @@
+- Unit testing
+- Write models
+- Build Rake preprocessing workflow for haml/slim and sass
+- Integrate frontend from codepen
